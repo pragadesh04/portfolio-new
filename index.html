@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/script.js" defer></script>
+    <title>Pragadesh-R</title>
+</head>
+<body id="theme" class="night">
+  
+    <div class="navbar" onclick="theme()">
+        <div class="navContainer">
+            <h3 class="navhead"><a href="#home">Pragadesh-R</a></h3>
+            <ul class="navClass">
+                <li id="home" onclick="loadActive('home')" class="navItem noborder active"><a href="#home">Home</a></li>
+                <li id="about" onclick="loadActive('about')" class="navItem noborder"><a href="#about-body">About</a></li>
+                <li id="education" onclick="loadActive('education')" class="navItem noborder"><a href="#education-body">Education</a></li>
+                <li id="projects" onclick="loadActive('projects')" class="navItem noborder"><a href="#project-body">Projects</a></li>
+                <li id="skills" onclick="loadActive('skills')" class="navItem noborder"><a href="#skill-body">Skills</a></li>
+                <li id="certifications" onclick="loadActive('certifications')" class="navItem noborder"><a href="#certifications">Certifications</a></li>
+                <li id="contact" onclick="loadActive('contact')" class="navItem noborder"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="about-body" class="about-container">
+        <div class="img-container">
+            <img class="image" src="./src/images/images.png" alt="Pragadesh - PortFolio">
+        </div>
+        <div class="about-body">
+            <div class="about-head">
+                <h2>About</h2>
+                <p class="paragraph">&emsp;&emsp;Ambitious Computer Science student proficient in Python and Java, with growing skills in web development (Flask, SQLite). Passionate about programming and eager to contribute to cutting-edge projects while continuously learning.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="education-body" class="container education-container">
+        <div class="education-inner">
+            <div class="education-head">
+                <h1>Education</h1>
+            </div>
+            <div class="educations educations-College">
+                <div class="year">
+                    <h1>2021 - 2025</h1>
+                </div>
+                <span class="splitter"></span>
+                <div class="college-details">
+                    <div>
+                        <h2 class="college-name">Nandha College Of Technology</h2>
+                        <h3 class="location">Vaikalmedu, Erode</h3>
+                    </div>
+                    <div class="college-description">
+                        <p class="paragraph-edu">Bachelors in Computer Science and Engineering, Final Year</p>
+                    </div>
+                </div>
+            </div>
+            <div class="educations educations-College">
+                <div class="year">
+                    <h1>2019 - 2021</h1>
+                </div>
+                <span class="splitter"></span>
+                <div class="college-details">
+                    <div>
+                        <h2 class="college-name">Carmel Matric Higher Secondary School</h2>
+                        <h3 class="location">Kollampalayam, Erode</h3>
+                    </div>
+                    <div class="college-description">
+                        <p class="paragraph-edu">Completed Higher Secondary education with a focus on Computer Science, building a strong foundation in programming, which prepared me for advanced studies in technology and Engineering.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="educations educations-College">
+                <div class="year">
+                    <h1>2015 - 2019</h1>
+                </div>
+                <span class="splitter"></span>
+                <div class="college-details">
+                    <div>
+                        <h2 class="college-name">Carmel Matric Higher Secondary School</h2>
+                        <h3 class="location">Kollampalayam, Erode</h3>
+                    </div>
+                    <div class="college-description">
+                        <p class="paragraph-edu">Completed my Secondary education with a clear concept to achieve Computer Science Group.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-body" class="container project-container">
+        <div class="project-inner">
+            <div class="project-head">
+                <h3>Projects</h3>
+            </div>
+            <div class="educations projects-all">
+                <div class="project-usage">
+                    <h2>Python, Flask, SQLAlchemy</h2>
+                </div>
+                <span class="splitter"></span>
+                <div class="college-details">
+                    <div>
+                        <h2 class="college-name">Money-Monitoring WebApp</h2>
+                        <h3 class="location">Learnt the basics of Flask, SQLAlchemy</h3>
+                    </div>
+                    <div class="college-description">
+                        <p class="paragraph-edu">A user-friendly web application for tracking personal expenses, featuring an intuitive interface for logging spending and monitoring financial activities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="educations projects-all">
+                <div class="project-usage">
+                    <h2>Python, Scrapy, GenSpider</h2>
+                </div>
+                <span class="splitter"></span>
+                <div class="college-details">
+                    <div>
+                        <h2 class="college-name">Web-scraping</h2>
+                        <h3 class="location">Learnt the power of automating data collection</h3>
+                    </div>
+                    <div class="college-description">
+                        <p class="paragraph-edu">Developed a web scraper using Scrapy to extract and rank the most popular creepypastas from creepypasta.com, automating data collection and analysis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="educations projects-all">
+                <div class="project-usage">
+                    <h2>Python, Pillow, pdfGen</h2>
+                </div>
+                <span class="splitter"></span>
+                <div class="college-details">
+                    <div>
+                        <h2 class="college-name">Image to PDF Converter</h2>
+                        <h3 class="location">Learnt how handy an image-to-PDF converter can be</h3>
+                    </div>
+                    <div class="college-description">
+                        <p class="paragraph-edu">Developed a Python tool using Pillow to convert multiple images into a single PDF. Users select a folder, and the script converts them all into a single PDF.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skill-body" class="container skills-all">
+        <div class="skillhead">
+            <h2>Skills</h2>
+        </div>
+        <div class="skill-inner">
+            <div class="skill-card">
+                <div class="skills">
+                    <h2>Python</h2>
+                    <h4>Flask, SQLAlchemy, Scrapy, Various Modules proficiency</h4>
+                </div>
+                <div class="skill-desc">
+                    <h4>Proficient in Python, adept at building web applications, data analysis, and automation with a strong grasp of various libraries and frameworks.</h4>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skills">
+                    <h2>Java</h2>
+                    <h4>Building from intermediate to advanced proficiency</h4>
+                </div>
+                <div class="skill-desc">
+                    <h4>Proficient in Java at an intermediate level, with a focus on advancing skills through continuous learning and practical application.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="skill-inner">
+            <div class="skill-card">
+                <div class="skills">
+                    <h2>HTML, CSS, JavaScript</h2>
+                    <h4>Diving deep into the field of web development with the basics</h4>
+                </div>
+                <div class="skill-desc">
+                    <h4>Developing a strong foundation in web technologies, including HTML, CSS, and JavaScript, to design and build modern, sleek, and responsive user interfaces. Focused on creating engaging and intuitive web experiences for users.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- Footer content here -->
+    </div>
+</body>
+</html>

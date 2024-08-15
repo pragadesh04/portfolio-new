@@ -1,0 +1,577 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* General Styles */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f1f5f9; /* Very light grey-blue */
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #1c2833; /* Dark grey */
+    transition: 0.5s ease-in-out;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.active {
+    border: 1px solid #2e4053; /* Medium dark blue-grey */
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+.container{
+    background-color: #00000091 !important;
+}
+.container:nth-child(even){
+    border-radius: 1rem 5rem 1rem 5rem;
+}
+.container:nth-child(odd){
+    border-radius: 5rem 1rem 5rem 1rem;
+}
+/* Education Section */
+.education-container {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #34495e; 
+    color: #ecf0f1; /* Off-white */
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition: 0.5s ease-in-out;
+}
+.education-head {
+    font-size: larger;
+    font-weight: 700;
+    color: #d6eaf8; /* Light blue */
+    filter: drop-shadow(4px 4px 3px #1c2833); /* Dark grey shadow */
+    transition: 0.5s ease-in-out;
+}
+
+.year {
+    color: #85c1e9; /* Soft blue */
+    filter: drop-shadow(4px 4px 3px #1c2833);
+    transition: 0.5s ease-in-out;
+}
+
+.educations {
+    display: flex;
+    transition: 0.5s ease-in-out;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.college-name {
+    color: #5dade2; /* Medium blue */
+    filter: drop-shadow(2px 3px 1px #1c2833);
+    transition: 0.5s ease-in-out;
+}
+
+.location {
+    color: #aed6f1; /* Lighter blue */
+    transition: 0.5s ease-in-out;
+}
+.college-description{
+    width: 800px;
+}
+.splitter {
+    width: 0.6rem;
+    height: 8.5rem;
+    margin: 0rem 2rem 1rem 2rem;
+    background-color: #1c2833; /* Dark grey */
+    transition: 0.5s ease-in-out;
+}
+
+.v-splitter {
+    height: 0.6rem;
+    width: 8.5rem;
+    background-color: #5d6d7e; /* Medium grey */
+    transition: 0.5s ease-in-out;
+}
+
+.project-container {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #34495e; /* Dark slate blue */
+    color: #ecf0f1; /* Off-white */
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    transition: 0.5s ease-in-out;
+}
+
+.project-head {
+    font-size: larger;
+    font-weight: 700;
+    color: #ffffff !important; /* Light blue */
+    filter: drop-shadow(4px 4px 3px #1c2833); /* Dark grey shadow */
+    transition: 0.5s ease-in-out;
+}
+
+.project-usage {
+    color: #85c1e9; /* Soft blue */
+    filter: drop-shadow(4px 4px 3px #1c2833);
+    transition: 0.5s ease-in-out;
+}
+
+.projects {
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+
+.college-name {
+    color: #5dade2; /* Medium blue */
+    filter: drop-shadow(2px 3px 1px #1c2833);
+    transition: 0.5s ease-in-out;
+}
+
+.location {
+    color: #aed6f1; /* Lighter blue */
+    transition: 0.5s ease-in-out;
+}
+.college-description{
+    width: 800px;
+}
+.splitter {
+    width: 0.6rem;
+    height: 8.5rem;
+    margin: 0rem 2rem 1rem 2rem;
+    background-color: #1c2833; /* Dark grey */
+    transition: 0.5s ease-in-out;
+}
+
+.v-splitter {
+    height: 0.6rem;
+    width: 8.5rem;
+    background-color: #5d6d7e; /* Medium grey */
+    transition: 0.5s ease-in-out;
+}
+.skills-all{
+    background-color: #273746;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2e4053; /* Medium dark blue-grey */
+    color: #ecf0f1; /* Off-white */
+    padding: 0.5rem;
+    animation: appear linear;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ecf0f1; /* Off-white */
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-size: large;
+    transition: 0.5s ease-in-out;
+}
+
+ul li {
+    list-style: none;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+
+}
+
+.navClass {
+    display: flex;
+    justify-content: end;
+    transition: 0.5s ease-in-out;
+}
+
+.navItem {
+    padding: 0.5rem 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+.navhead {
+    margin-left: 0.3rem;
+    transition: 0.5s ease-in-out;
+}
+
+.noborder {
+    border-bottom: 1px solid #2e4053; /* Medium dark blue-grey */
+    transition: 0.5s ease-in-out;
+}
+
+/* Image and About Section */
+.image {
+    animation: cardAppear 0.5s 0.2s ease-in-out;
+    width: 400px;
+    margin-right: 2rem;
+}
+
+.image::before{
+    content: "";
+    opacity: 0;
+}
+.image::after{
+    content: "";
+    opacity: 1;
+}
+
+.about-head {
+    color: #1c2833; /* Dark grey */
+    width: 500px;
+    font-size: larger;
+    margin-left: 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.about-body{
+    animation: cardAppear 0.5s ease-in;
+    transition: 0.5s ease-in-out;
+}
+/* Projects Section */
+.projects-contaier {
+    background-color: #0066cc;
+}
+
+.project-head {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0066cc; /* Deep blue for headings */
+    margin-bottom: 1rem;
+    
+}
+.project-usage{
+    width: 300px;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap nicely on smaller screens */
+    gap: 1.5rem; /* Adds space between project items */
+}
+
+.project-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0066cc;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); /* Subtle shadow */
+}
+
+.learnt {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1a1a1a; /* Slightly lighter text for subheadings */
+    margin-top: 0.5rem;
+}
+
+.splitter {
+    width: 0.6rem;
+    height: 8.5rem;
+    margin: 0rem 2rem 1rem 2rem;
+    background-color: #0066cc;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4d4d4d; /* Medium gray for description text */
+    margin-top: 0.5rem;
+}
+
+.projects .year {
+    font-size: 1.2rem;
+    color: #004080; /* Darker blue for year */
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+/* Skill Fields */
+.skills-all{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.skillhead{
+    color: #ffffff; /* Medium blue */
+    filter: drop-shadow(2px 3px 1px #1c2833);
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(3px 3px 4px black);
+
+}
+.skills h2{
+    color:#5dade2; 
+}
+.skills h4{
+    color: #aed6f1; /* Lighter blue */
+    transition: 0.5s ease-in-out;
+}
+.skill-desc{
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.skill-inner{
+    display: flex;
+    flex-direction: row;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+.skill-card{
+    background-color: #007bff3e;
+    margin: 0.2rem;
+    padding: 1rem;
+    filter: drop-shadow(3px 3px 1px black);
+    width: 100%;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 39%;
+}
+
+.skill-card:nth-child(even){
+    background-color: #00c3ff3e;
+    border-radius: 1rem 3rem 1rem 3rem;
+}
+.skill-card:nth-child(odd){
+    border-radius: 3rem 1rem 3rem 1rem;
+}
+
+/* footers */
+.footer{
+    background-color: #000000;
+    height: 100px;
+    width: 100%;
+}
+
+
+/*Dark Theme Styles */
+body.night .project-container {
+    background-color: #273746;
+}
+body.night {
+    background-color: #1c2833;
+    transition: 0.2s ease-in-out;
+}
+body.night .navbar {
+    background-color: #273746;
+    color: #d5d8dc; 
+    padding: 0.5rem;
+    transition: 0.5s ease-in-out;
+}
+body.night .navContainer a {
+    color: #d5d8dc; 
+    transition: 0.5s ease-in-out;
+}
+body.night .about-head {
+    color: #d5d8dc; 
+    transition: 0.5s ease-in-out;
+}
+body.night .education-container {
+    background-color: #273746; /* Darker blue-grey */
+    color: #d5d8dc; /* Light grey */
+    transition: 0.5s ease-in-out;
+}
+body.night .education-head {
+    color: #d6eaf8; /* Light blue */
+    transition: 0.5s ease-in-out;
+}
+body.night .splitter {
+    background-color: #d5d8dc; /* Light grey */
+    transition: 0.5s ease-in-out;
+}
+body.night .v-splitter {
+    background-color: #85929e; /* Soft grey */
+    transition: 0.5s ease-in-out;
+}
+body.night .year {
+    color: #85c1e9; /* Soft blue */
+    transition: 0.5s ease-in-out;
+}
+body.night .college-name {
+    color: #5dade2; /* Medium blue */
+    transition: 0.5s ease-in-out;
+}
+body.night .location {
+    color: #aed6f1; /* Lighter blue */
+    transition: 0.5s ease-in-out;
+}
+body.night .educations {
+    transition: 0.5s ease-in-out;
+}
+body.night .navClass {
+    transition: 0.5s ease-in-out;
+}
+body.night .navItem {
+    transition: 0.5s ease-in-out;
+}
+body.night .navhead {
+    transition: 0.5s ease-in-out;
+}
+body.night .noborder {
+    transition: 0.5s ease-in-out;
+}
+body.night .image {
+    transition: 0.5s ease-in-out;
+}
+body.night .skills h2 {
+    color: #9cc9ff; /* Slightly lighter blue for headers */
+}
+
+body.night .skills h4 {
+    color: #b3cde0; /* Muted light blue */
+}
+
+body.night .skill-desc {
+    color: #d1d1d1; /* Light grey */
+}
+
+body.night .skill-card {
+    background-color: #1f1f1f; /* Darker background for cards */
+    filter: drop-shadow(3px 3px 1px #000000);
+    /* Keeping the same drop shadow, but you could darken or lighten this */
+}
+
+body.night .skill-card:nth-child(even) {
+    background-color: #252525; /* Slightly different dark grey for contrast */
+}
+
+body.night .skillhead {
+    color: #e0e0e0; /* Light text color */
+    filter: drop-shadow(3px 3px 4px #000000);
+}
+
+body.night,
+body.night .skill-inner {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+
+/* Optional transitions for smooth switching between themes */
+body.night .skillhead,
+body.night .skills h4,
+body.night .skill-desc,
+body.night .skill-card {
+    transition: 0.5s ease-in-out;
+}
+
+/* Animations */
+
+
+@keyframes cardAppear {
+    0% {
+        opacity: 0;
+        clip-path: inset(100% 100% 0% 100%);
+    }
+    100% {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+        /* transform: scale(0.5); */
+        clip-path: inset(0 0 100% 100%);
+    }
+    70% {
+        opacity: 1;
+        /* transform: scale(1); */
+        clip-path: inset(0 0 0 0);
+
+    }
+}
+
+/* 600px Screens */
+/* For screens 600px and below */
+/* Media Queries */
+@media screen and (max-width: 600px) {
+
+    .skill-inner {
+        flex-direction: column;
+    }
+
+    .navClass {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-head {
+        width: 100%; /* Adjusted to ensure it fits well */
+        margin: 1rem;
+        font-size: 1.2rem; /* Adjusted for better readability */
+    }
+
+    .education-head {
+        font-size: 1.2rem; /* Adjusted for better readability */
+    }
+
+    .education-container {
+        margin: 1rem;
+        padding: 1rem; /* Adjusted to ensure padding is consistent */
+        box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    }
+
+    .educations {
+        flex-direction: column;
+    }
+
+    .splitter {
+        display: none;
+    }
+
+    .paragraph-edu {
+        width: 45%; /* Adjusted to fit within the container */
+        box-sizing: border-box; /* Ensures padding is included */
+    }
+
+    .skill-card {
+        width: 100%; /* Adjusted to fit within the container */
+        box-sizing: border-box; /* Ensures padding is included */
+        margin: 0.5rem 0; /* Adjusted margin for better spacing */
+    }
+
+    .skills-all {
+        margin: 1rem;
+        padding: 1rem; /* Adjusted for consistent padding */
+        box-sizing: border-box; /* Ensures padding is included */
+        height: auto; /* Adjusted for dynamic content height */
+        animation: none;
+    }
+
+    .project-usage {
+        display: none;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 1rem; /* Adjusted for spacing between projects */
+    }
+
+    .project-container {
+        margin: 1rem;
+        padding: 1rem; /* Adjusted for consistent padding */
+        box-sizing: border-box; /* Ensures padding is included */
+    }
+}
