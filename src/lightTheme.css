@@ -480,12 +480,17 @@ ul li {
 }
 
 h2, h3, .paragraph-edu, .paragraph, .certification-header,
-.certificate-dl, .skillhead, .certification-card,
-.certificate-container, .education-container
+.certificate-dl, .skillhead, .certification-card, .education-container
 {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+.certificate-container{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
 }
 
 .certificate-img .images{
