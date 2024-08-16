@@ -6,7 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    background-color: #bcddff; /* Very light grey-blue */
+    background-color: #002849; /* Very light grey-blue */
     margin: 0;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
@@ -44,6 +44,14 @@ body {
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
     transition: 0.5s ease-in-out;
+}
+.education-container::before{
+    content: "";
+    opacity: 0;
+}
+.education-container::after{
+    content: "";
+    opacity: 1;
 }
 .education-head {
     font-size: larger;
@@ -245,7 +253,10 @@ ul li {
     align-items: center;
     height: 80vh;
 }
-
+.about-body{
+    animation: cardAppear 0.5s ease-in;
+    transition: 0.5s ease-in-out;
+}
 /* Projects Section */
 .projects-contaier {
     background-color: #0066cc;
@@ -346,6 +357,12 @@ ul li {
     animation-range: entry 0 cover 39%;
 }
 
+.skill-card h4{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
 .skill-card:nth-child(even){
     background-color: #00c3ff3e;
     border-radius: 1rem 3rem 1rem 3rem;
@@ -398,10 +415,17 @@ ul li {
 .certificate-container{
     margin: 2rem;
     padding: 2rem;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
 }
 .certification-card{
     margin: 0.5rem;
 
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .certificate-img {
     display: flex;
@@ -419,6 +443,10 @@ ul li {
     transition: 0.5s ease-in-out;
     border-radius: 2rem;
     cursor: pointer;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .certificate-dl a{
     text-decoration: none;
@@ -431,7 +459,7 @@ ul li {
     justify-content: space-around;
 }
 .images{
-    width: 250px;
+    width: 400px;
     border: 0.3rem solid black;
     border-radius: 1rem;
 }
@@ -444,4 +472,38 @@ ul li {
 .certificate-dl:hover a{
     color: white;
     transition: 0.5s ease-in-out;
+}
+
+.about-head{
+    color: #d6efff !important;
+}
+
+.certification-header{
+    color: #aed6f1;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.certification-header h3{
+    color: white;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.certification{
+    text-align: center;
+}
+
+h2, h3, .paragraph-edu, .paragraph{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.skillhead{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }

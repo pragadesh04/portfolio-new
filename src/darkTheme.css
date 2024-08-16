@@ -1,110 +1,114 @@
-/*Dark Theme Styles */
+/* Dark Theme Styles */
 body.night .project-container {
     background-color: #273746;
 }
+
 body.night {
     background-color: #1c2833;
-    transition: 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
+
 body.night .navbar {
     background-color: #273746;
-    color: #d5d8dc; 
+    color: #d5d8dc;
     padding: 0.5rem;
-    transition: 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
+
 body.night .navContainer a {
-    color: #d5d8dc; 
-    transition: 0.5s ease-in-out;
+    color: #d5d8dc;
+    transition: color 0.5s ease-in-out;
 }
+
+body.night .about-head,
+body.night .education-head,
+body.night .year,
+body.night .college-name,
+body.night .location,
+body.night .skills h2,
+body.night .skills h4,
+body.night .skill-desc,
+body.night .skillhead {
+    transition: color 0.5s ease-in-out;
+}
+
 body.night .about-head {
-    color: #d5d8dc; 
-    transition: 0.5s ease-in-out;
+    color: #d5d8dc;
 }
+
 body.night .education-container {
-    background-color: #273746; /* Darker blue-grey */
-    color: #d5d8dc; /* Light grey */
-    transition: 0.5s ease-in-out;
+    background-color: #273746;
+    color: #d5d8dc;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
+
 body.night .education-head {
-    color: #d6eaf8; /* Light blue */
-    transition: 0.5s ease-in-out;
+    color: #d6eaf8;
 }
+
 body.night .splitter {
-    background-color: #d5d8dc; /* Light grey */
-    transition: 0.5s ease-in-out;
+    background-color: #d5d8dc;
 }
+
 body.night .v-splitter {
-    background-color: #85929e; /* Soft grey */
-    transition: 0.5s ease-in-out;
+    background-color: #85929e;
 }
+
 body.night .year {
-    color: #85c1e9; /* Soft blue */
-    transition: 0.5s ease-in-out;
+    color: #85c1e9;
 }
+
 body.night .college-name {
-    color: #5dade2; /* Medium blue */
-    transition: 0.5s ease-in-out;
+    color: #5dade2;
 }
+
 body.night .location {
-    color: #aed6f1; /* Lighter blue */
-    transition: 0.5s ease-in-out;
+    color: #aed6f1;
 }
-body.night .educations {
-    transition: 0.5s ease-in-out;
-}
-body.night .navClass {
-    transition: 0.5s ease-in-out;
-}
-body.night .navItem {
-    transition: 0.5s ease-in-out;
-}
-body.night .navhead {
-    transition: 0.5s ease-in-out;
-}
-body.night .noborder {
-    transition: 0.5s ease-in-out;
-}
-body.night .image {
-    transition: 0.5s ease-in-out;
-}
+
 body.night .skills h2 {
-    color: #9cc9ff; /* Slightly lighter blue for headers */
+    color: #9cc9ff;
 }
 
 body.night .skills h4 {
-    color: #b3cde0; /* Muted light blue */
+    color: #b3cde0;
 }
 
 body.night .skill-desc {
-    color: #d1d1d1; /* Light grey */
+    color: #d1d1d1;
 }
 
 body.night .skill-card {
-    background-color: #1f1f1f; /* Darker background for cards */
+    background-color: #1f1f1f;
     filter: drop-shadow(3px 3px 1px #000000);
-    /* Keeping the same drop shadow, but you could darken or lighten this */
+    transition: background-color 0.5s ease-in-out;
 }
 
 body.night .skill-card:nth-child(even) {
-    background-color: #252525; /* Slightly different dark grey for contrast */
+    background-color: #252525;
 }
 
 body.night .skillhead {
-    color: #e0e0e0; /* Light text color */
+    color: #e0e0e0;
     filter: drop-shadow(3px 3px 4px #000000);
 }
 
 body.night,
 body.night .skill-inner {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 20%;
+    animation: appear 1s linear;
 }
 
-/* Optional transitions for smooth switching between themes */
-body.night .skillhead,
-body.night .skills h4,
-body.night .skill-desc,
-body.night .skill-card {
+@keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Transition for other elements */
+body.night .educations,
+body.night .navClass,
+body.night .navItem,
+body.night .navhead,
+body.night .noborder,
+body.night .image {
     transition: 0.5s ease-in-out;
 }
