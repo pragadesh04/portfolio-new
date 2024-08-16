@@ -24,7 +24,9 @@
 
 /* Media Queries */
 @media screen and (max-width: 600px) {
-
+    .image{
+        width: 300px;
+    }
     .skill-inner {
         flex-wrap: wrap;
     }
