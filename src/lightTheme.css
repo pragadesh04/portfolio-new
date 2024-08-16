@@ -6,7 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    background-color: #f1f5f9; /* Very light grey-blue */
+    background-color: #bcddff; /* Very light grey-blue */
     margin: 0;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
@@ -235,7 +235,7 @@ ul li {
     font-size: larger;
     margin-left: 2rem;
     transition: 0.5s ease-in-out;
-    text-wrap: ;
+    text-wrap: wrap;
 }
 
 .about-container {
@@ -302,6 +302,9 @@ ul li {
     font-size: 1.2rem;
     color: #004080; /* Darker blue for year */
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+.college-details{
+    width: 75%;
 }
 /* Skill Fields */
 .skills-all{
@@ -394,227 +397,4 @@ ul li {
 
 .footer-bottom {
     margin-top: 20px;
-}
-
-
-/*Dark Theme Styles */
-body.night .project-container {
-    background-color: #273746;
-}
-body.night {
-    background-color: #1c2833;
-    transition: 0.2s ease-in-out;
-}
-body.night .navbar {
-    background-color: #273746;
-    color: #d5d8dc; 
-    padding: 0.5rem;
-    transition: 0.5s ease-in-out;
-}
-body.night .navContainer a {
-    color: #d5d8dc; 
-    transition: 0.5s ease-in-out;
-}
-body.night .about-head {
-    color: #d5d8dc; 
-    transition: 0.5s ease-in-out;
-}
-body.night .education-container {
-    background-color: #273746; /* Darker blue-grey */
-    color: #d5d8dc; /* Light grey */
-    transition: 0.5s ease-in-out;
-}
-body.night .education-head {
-    color: #d6eaf8; /* Light blue */
-    transition: 0.5s ease-in-out;
-}
-body.night .splitter {
-    background-color: #d5d8dc; /* Light grey */
-    transition: 0.5s ease-in-out;
-}
-body.night .v-splitter {
-    background-color: #85929e; /* Soft grey */
-    transition: 0.5s ease-in-out;
-}
-body.night .year {
-    color: #85c1e9; /* Soft blue */
-    transition: 0.5s ease-in-out;
-}
-body.night .college-name {
-    color: #5dade2; /* Medium blue */
-    transition: 0.5s ease-in-out;
-}
-body.night .location {
-    color: #aed6f1; /* Lighter blue */
-    transition: 0.5s ease-in-out;
-}
-body.night .educations {
-    transition: 0.5s ease-in-out;
-}
-body.night .navClass {
-    transition: 0.5s ease-in-out;
-}
-body.night .navItem {
-    transition: 0.5s ease-in-out;
-}
-body.night .navhead {
-    transition: 0.5s ease-in-out;
-}
-body.night .noborder {
-    transition: 0.5s ease-in-out;
-}
-body.night .image {
-    transition: 0.5s ease-in-out;
-}
-body.night .skills h2 {
-    color: #9cc9ff; /* Slightly lighter blue for headers */
-}
-
-body.night .skills h4 {
-    color: #b3cde0; /* Muted light blue */
-}
-
-body.night .skill-desc {
-    color: #d1d1d1; /* Light grey */
-}
-
-body.night .skill-card {
-    background-color: #1f1f1f; /* Darker background for cards */
-    filter: drop-shadow(3px 3px 1px #000000);
-    /* Keeping the same drop shadow, but you could darken or lighten this */
-}
-
-body.night .skill-card:nth-child(even) {
-    background-color: #252525; /* Slightly different dark grey for contrast */
-}
-
-body.night .skillhead {
-    color: #e0e0e0; /* Light text color */
-    filter: drop-shadow(3px 3px 4px #000000);
-}
-
-body.night,
-body.night .skill-inner {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 20%;
-}
-
-/* Optional transitions for smooth switching between themes */
-body.night .skillhead,
-body.night .skills h4,
-body.night .skill-desc,
-body.night .skill-card {
-    transition: 0.5s ease-in-out;
-}
-
-/* Animations */
-
-
-@keyframes cardAppear {
-    0% {
-        opacity: 0;
-        clip-path: inset(100% 100% 0% 100%);
-    }
-    100% {
-        opacity: 1;
-        clip-path: inset(0 0 0 0);
-    }
-}
-@keyframes appear {
-    0% {
-        opacity: 0;
-        /* transform: scale(0.5); */
-        clip-path: inset(0 0 100% 100%);
-    }
-    70% {
-        opacity: 1;
-        /* transform: scale(1); */
-        clip-path: inset(0 0 0 0);
-
-    }
-}
-.college-details{
-    width: 75%;
-}
-/* 600px Screens */
-/* For screens 600px and below */
-/* Media Queries */
-@media screen and (max-width: 600px) {
-
-    .skill-inner {
-        flex-wrap: wrap;
-    }
-
-    .navClass {
-        display: none;
-    }
-
-    .about-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .about-head {
-        width: 100%; /* Adjusted to ensure it fits well */
-        margin: 1rem;
-        font-size: 1.2rem; /* Adjusted for better readability */
-    }
-
-    .education-head {
-        font-size: 1.2rem; /* Adjusted for better readability */
-    }
-
-    .education-container {
-        display: flex;
-    }
-
-    .educations {
-        flex-direction: column;
-    }
-
-    .splitter {
-        display: none;
-    }
-
-    .paragraph-edu {
-        width: 100%; /* Adjusted to fit within the container */
-        box-sizing: border-box; /* Ensures padding is included */
-    }
-
-    .skill-card {
-        width: 100%; /* Adjusted to fit within the container */
-        box-sizing: border-box; /* Ensures padding is included */
-        margin: 0.5rem 0; /* Adjusted margin for better spacing */
-    }
-
-    .skills-all {
-        margin: 1rem;
-        padding: 1rem; /* Adjusted for consistent padding */
-        box-sizing: border-box; /* Ensures padding is included */
-        height: auto; /* Adjusted for dynamic content height */
-        animation: none;
-    }
-
-    .project-usage {
-        display: none;
-    }
-
-    .projects {
-        flex-wrap: wrap;
-        gap: 1rem; /* Adjusted for spacing between projects */
-    }
-    .project-container {
-        margin: 1rem;
-        padding: 1rem; /* Adjusted for consistent padding */
-        box-sizing: border-box; /* Ensures padding is included */
-    }
-    .year{
-        font-size: 1rem;
-    }
-    .college-details{
-        width: 100%;
-    }
-
 }

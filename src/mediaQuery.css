@@ -1,0 +1,103 @@
+@keyframes cardAppear {
+    0% {
+        opacity: 0;
+        clip-path: inset(100% 100% 0% 100%);
+    }
+    100% {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+        /* transform: scale(0.5); */
+        clip-path: inset(0 0 100% 100%);
+    }
+    70% {
+        opacity: 1;
+        /* transform: scale(1); */
+        clip-path: inset(0 0 0 0);
+
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+
+    .skill-inner {
+        flex-wrap: wrap;
+    }
+
+    .navClass {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-head {
+        width: 100%; /* Adjusted to ensure it fits well */
+        margin: 1rem;
+        font-size: 1.2rem; /* Adjusted for better readability */
+    }
+
+    .education-head {
+        font-size: 1.2rem; /* Adjusted for better readability */
+    }
+
+    .education-container {
+        display: flex;
+    }
+
+    .educations {
+        flex-direction: column;
+    }
+
+    .splitter {
+        display: none;
+    }
+
+    .paragraph-edu {
+        width: 100%; /* Adjusted to fit within the container */
+        box-sizing: border-box; /* Ensures padding is included */
+    }
+
+    .skill-card {
+        width: 100%; /* Adjusted to fit within the container */
+        box-sizing: border-box; /* Ensures padding is included */
+        margin: 0.5rem 0; /* Adjusted margin for better spacing */
+    }
+
+    .skills-all {
+        margin: 1rem;
+        padding: 1rem; /* Adjusted for consistent padding */
+        box-sizing: border-box; /* Ensures padding is included */
+        height: auto; /* Adjusted for dynamic content height */
+        animation: none;
+    }
+
+    .project-usage {
+        display: none;
+    }
+
+    .projects {
+        flex-wrap: wrap;
+        gap: 1rem; /* Adjusted for spacing between projects */
+    }
+    .project-container {
+        margin: 1rem;
+        padding: 1rem; /* Adjusted for consistent padding */
+        box-sizing: border-box; /* Ensures padding is included */
+    }
+    .year{
+        font-size: 1rem;
+    }
+    .college-details{
+        width: 100%;
+    }
+
+}
