@@ -530,7 +530,7 @@ h2, h3, .paragraph-edu, .paragraph, .certification-header,
 }
 .contact-logos{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .contact-container h2{
