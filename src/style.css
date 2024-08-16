@@ -79,7 +79,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 .college-description{
-    width: 800px;
+    text-wrap: wrap;
 }
 .splitter {
     width: 0.6rem;
@@ -137,7 +137,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 .college-description{
-    width: 800px;
+    text-wrap: wrap;
 }
 .splitter {
     width: 0.6rem;
@@ -216,7 +216,7 @@ ul li {
 /* Image and About Section */
 .image {
     animation: cardAppear 0.5s 0.2s ease-in-out;
-    width: 400px;
+    width: 500px;
     margin-right: 2rem;
 }
 
@@ -235,10 +235,12 @@ ul li {
     font-size: larger;
     margin-left: 2rem;
     transition: 0.5s ease-in-out;
+    text-wrap: ;
 }
 
 .about-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 80vh;
@@ -532,14 +534,16 @@ body.night .skill-card {
 
     }
 }
-
+.college-details{
+    width: 75%;
+}
 /* 600px Screens */
 /* For screens 600px and below */
 /* Media Queries */
 @media screen and (max-width: 600px) {
 
     .skill-inner {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .navClass {
@@ -563,9 +567,7 @@ body.night .skill-card {
     }
 
     .education-container {
-        margin: 1rem;
-        padding: 1rem; /* Adjusted to ensure padding is consistent */
-        box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+        display: flex;
     }
 
     .educations {
@@ -577,7 +579,7 @@ body.night .skill-card {
     }
 
     .paragraph-edu {
-        width: 45%; /* Adjusted to fit within the container */
+        width: 100%; /* Adjusted to fit within the container */
         box-sizing: border-box; /* Ensures padding is included */
     }
 
@@ -600,13 +602,19 @@ body.night .skill-card {
     }
 
     .projects {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 1rem; /* Adjusted for spacing between projects */
     }
-
     .project-container {
         margin: 1rem;
         padding: 1rem; /* Adjusted for consistent padding */
         box-sizing: border-box; /* Ensures padding is included */
     }
+    .year{
+        font-size: 1rem;
+    }
+    .college-details{
+        width: 100%;
+    }
+
 }
