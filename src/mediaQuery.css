@@ -1,53 +1,54 @@
-@keyframes cardAppear {
+ @keyframes cardAppear {
     0% {
         opacity: 0;
-        clip-path: inset(100% 100% 0% 100%);
+        transform: translatex(-1000px);
+    }
+    25%{
+        opacity: 0;
     }
     100% {
         opacity: 1;
-        clip-path: inset(0 0 0 0);
+        transform: translatex(0px);
     }
 }
 @keyframes appear {
     0% {
         opacity: 0;
-        /* transform: scale(0.5); */
+
         clip-path: inset(0 100% 0 100%);
     }
     70% {
         opacity: 1;
-        /* transform: scale(1); */
+
         clip-path: inset(0 0 0 0);
 
     }
 }
 @keyframes logos {
     0%{
-        transform: rotate3d(1, 1, 1, 360deg);
+        scale: -1;
+        transform: rotate3d(2, 2, 2, 180deg);
     }
     100%{
-        transform: rotate3d(1, 1, 1, 00deg);
+        scale: 1;
+        transform: rotate3d(2, 2, 2, 00deg);
     }
 }
 
-/* @keyframes logo-infinity {
-    0%{
-        transform: rotate(0deg);
+@keyframes aboutintro{
+    0% {
+        opacity: 0;
+        transform: translatex(1000px);
     }
     25%{
-        transform: rotate(50deg);
+        opacity: 0;
     }
-    50%{
-        transform: rotate(0deg);
+    100% {
+        opacity: 1;
+        transform: translatex(0px);
     }
-    75%{
-        transform: rotate(-50deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-} */
-/* Media Queries */
+}
+
 @media screen and (max-width: 600px) {
     .image{
         width: 300px;
@@ -67,13 +68,13 @@
     }
 
     .about-head {
-        width: 100%; /* Adjusted to ensure it fits well */
+        width: 100%; 
         margin: 1rem;
-        font-size: 1.2rem; /* Adjusted for better readability */
+        font-size: 1.2rem; 
     }
 
     .education-head {
-        font-size: 1.2rem; /* Adjusted for better readability */
+        font-size: 1.2rem; 
     }
 
     .education-container {
@@ -89,21 +90,21 @@
     }
 
     .paragraph-edu {
-        width: 100%; /* Adjusted to fit within the container */
-        box-sizing: border-box; /* Ensures padding is included */
+        width: 100%;
+        box-sizing: border-box; 
     }
 
     .skill-card {
-        width: 100%; /* Adjusted to fit within the container */
-        box-sizing: border-box; /* Ensures padding is included */
-        margin: 0.5rem 0; /* Adjusted margin for better spacing */
+        width: 100%;
+        box-sizing: border-box; 
+        margin: 0.5rem 0; 
     }
 
     .skills-all {
         margin: 1rem;
-        padding: 1rem; /* Adjusted for consistent padding */
-        box-sizing: border-box; /* Ensures padding is included */
-        height: auto; /* Adjusted for dynamic content height */
+        padding: 1rem; 
+        box-sizing: border-box; 
+        height: auto; 
         animation: none;
     }
 
@@ -113,12 +114,12 @@
 
     .projects {
         flex-wrap: wrap;
-        gap: 1rem; /* Adjusted for spacing between projects */
+        gap: 1rem;
     }
     .project-container {
         margin: 1rem;
-        padding: 1rem; /* Adjusted for consistent padding */
-        box-sizing: border-box; /* Ensures padding is included */
+        padding: 1rem;
+        box-sizing: border-box;
     }
     .year{
         font-size: 1rem;
@@ -134,9 +135,36 @@
         width: 250px;
     }
 }
-
+@media screen and (max-width:480px) {
+    .big-3 .logo{
+        width: 45px !important;
+    }
+}
 @media screen and (max-width:550px) {
     .images{
         width: 300px;
+    }
+}
+
+@keyframes contact {
+    0%{
+        transform: translateX(-20px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(-20px);
+    }
+}
+@keyframes contactLogo {
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(0.8);
     }
 }

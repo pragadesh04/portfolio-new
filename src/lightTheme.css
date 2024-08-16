@@ -36,7 +36,7 @@ body {
 }
 /* Education Section */
 .education-container {
-    margin: 2rem;
+    margin: 5rem 2rem 2rem 2rem;
     padding: 2rem;
     background-color: #34495e; 
     color: #ecf0f1; /* Off-white */
@@ -237,7 +237,7 @@ ul li {
 .about-head {
     color: #1c2833; /* Dark grey */
     width: 500px;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     margin-left: 2rem;
     transition: 0.5s ease-in-out;
     text-wrap: wrap;
@@ -253,8 +253,17 @@ ul li {
     height: 80vh;
 }
 .about-body{
-    animation: cardAppear 0.5s ease-in;
+    animation: aboutintro 0.5s 0.2s ease-in;
     transition: 0.5s ease-in-out;
+}
+
+.about-body::before{
+    content: "";
+    opacity: 0;
+}
+.about-body::after{
+    content: "";
+    opacity: 1;
 }
 /* Projects Section */
 .projects-contaier {
@@ -477,4 +486,57 @@ h2, h3, .paragraph-edu, .paragraph, .certification-header,
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+.certificate-img .images{
+    animation: logos linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin: 0rem;
+    padding: 1rem;
+}
+
+.contact img {
+    animation: contactLogo 2s;
+    animation-iteration-count: infinite;
+
+    z-index: 1;
+
+    width: 50px;
+    height: 50px;
+    background-color: #0066cc;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.contact h3, .contact a{
+    animation: contact 2s;
+    animation-iteration-count: infinite;
+
+    text-align: end;
+    
+    text-decoration: none;
+
+    background-color: #0066cc;
+    color: #fff;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    border-radius: 0 25px 25px 0px;
+    margin: -0.5rem;
+}
+.contact-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contact-container h2{
+    padding: 1rem;
+    margin: 5rem 2rem 0rem 5rem;
+    animation: none;
+
+    color: #aed6f1;
 }
