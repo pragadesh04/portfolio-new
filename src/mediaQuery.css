@@ -23,14 +23,14 @@
 }
 @keyframes logos {
     0%{
-        transform: rotate3d(0, 1, 1, 360deg);
+        transform: rotate3d(1, 1, 1, 360deg);
     }
     100%{
-        transform: rotate3d(0, 1, 1, 00deg);
+        transform: rotate3d(1, 1, 1, 00deg);
     }
 }
 
-@keyframes logo-infinity {
+/* @keyframes logo-infinity {
     0%{
         transform: rotate(0deg);
     }
@@ -46,7 +46,7 @@
     100%{
         transform: rotate(0deg);
     }
-}
+} */
 /* Media Queries */
 @media screen and (max-width: 600px) {
     .image{

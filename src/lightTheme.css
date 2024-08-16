@@ -245,10 +245,7 @@ ul li {
     align-items: center;
     height: 80vh;
 }
-.about-body{
-    animation: cardAppear 0.5s ease-in;
-    transition: 0.5s ease-in-out;
-}
+
 /* Projects Section */
 .projects-contaier {
     background-color: #0066cc;
@@ -397,4 +394,54 @@ ul li {
 
 .footer-bottom {
     margin-top: 20px;
+}
+.certificate-container{
+    margin: 2rem;
+    padding: 2rem;
+}
+.certification-card{
+    margin: 0.5rem;
+
+}
+.certificate-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate-head{
+    color: white;
+}
+.certificate-dl{
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    transition: 0.5s ease-in-out;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.certificate-dl a{
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    color: black;
+}
+.certifictaion-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.images{
+    width: 250px;
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+}
+
+.certificate-dl:hover {
+    background-color: rgb(97, 97, 97);
+    color: white !important;
+    transition: 0.5s ease-in-out;
+}
+.certificate-dl:hover a{
+    color: white;
+    transition: 0.5s ease-in-out;
 }
