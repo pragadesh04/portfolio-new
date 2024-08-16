@@ -535,8 +535,7 @@ h2, h3, .paragraph-edu, .paragraph, .certification-header,
 }
 .contact-logos{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column:
 }
 .contact-container h2{
     padding: 1rem;
@@ -545,3 +544,35 @@ h2, h3, .paragraph-edu, .paragraph, .certification-header,
 
     color: #aed6f1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
