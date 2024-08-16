@@ -40,9 +40,6 @@ body {
     padding: 2rem;
     background-color: #34495e; 
     color: #ecf0f1; /* Off-white */
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
     transition: 0.5s ease-in-out;
 }
 .education-container::before{
@@ -240,10 +237,12 @@ ul li {
 .about-head {
     color: #1c2833; /* Dark grey */
     width: 500px;
-    font-size: larger;
+    font-size: 1.35rem;
     margin-left: 2rem;
     transition: 0.5s ease-in-out;
     text-wrap: wrap;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .about-container {
@@ -357,12 +356,6 @@ ul li {
     animation-range: entry 0 cover 39%;
 }
 
-.skill-card h4{
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
 .skill-card:nth-child(even){
     background-color: #00c3ff3e;
     border-radius: 1rem 3rem 1rem 3rem;
@@ -415,17 +408,10 @@ ul li {
 .certificate-container{
     margin: 2rem;
     padding: 2rem;
-
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 20%;
 }
 .certification-card{
     margin: 0.5rem;
 
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
 }
 .certificate-img {
     display: flex;
@@ -443,10 +429,6 @@ ul li {
     transition: 0.5s ease-in-out;
     border-radius: 2rem;
     cursor: pointer;
-
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
 }
 .certificate-dl a{
     text-decoration: none;
@@ -480,29 +462,18 @@ ul li {
 
 .certification-header{
     color: #aed6f1;
-
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
 }
 .certification-header h3{
     color: white;
-
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
 }
 .certification{
     text-align: center;
 }
 
-h2, h3, .paragraph-edu, .paragraph{
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-.skillhead{
+h2, h3, .paragraph-edu, .paragraph, .certification-header,
+.certificate-dl, .skillhead, .certification-card,
+.certificate-container, .education-container
+{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
