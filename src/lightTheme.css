@@ -535,7 +535,9 @@ h2, h3, .paragraph-edu, .paragraph, .certification-header,
 }
 .contact-logos{
     display: flex;
-    flex-direction: column:
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .contact-container h2{
     padding: 1rem;
@@ -544,35 +546,6 @@ h2, h3, .paragraph-edu, .paragraph, .certification-header,
 
     color: #aed6f1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.about-head .certificate-dl{
+    animation: none;
+}
