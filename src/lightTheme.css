@@ -549,3 +549,12 @@ h2, h3, .paragraph-edu, .paragraph, .certification-header,
 .about-head .certificate-dl{
     animation: none;
 }
+
+.contact-logos .github{
+    margin: 10rem;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+.github .contact h3{
+    text-wrap: nowrap;
+}
