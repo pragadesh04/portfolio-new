@@ -558,3 +558,6 @@ h2, h3, .paragraph-edu, .paragraph, .certification-header,
 .github .contact h3{
     text-wrap: nowrap;
 }
+.contact #gmail{
+    width: 60px;
+}
